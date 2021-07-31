@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocoyo Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md">
+      <h1 class="navbar-brand">Chocoyo Portfolio</h1>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/files/resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+  </header>
+  <!-- End of Header -->
+  <!-- Main Picture -->
+  <figure class="hero"></figure>
+  <!-- End of Main Picture -->
+  <!-- Main -->
+  <main>
+    <!-- About Me -->
+    <section id="about">
+      <h1 class="display-4">
+        About Me
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#aboutMe"
+          aria-expanded="false" aria-controls="aboutMe" id="showAboutMe">
+          <i class="fas fa-chevron-up" aria-hidden="true" id="showAboutMeIcon"></i>
+        </button>
+      </h1>
+      <div class="card mb-3" id="aboutMe">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <img class="card-img" src="./assets/images/office.jpg" alt="Office" width="50%" />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body text-justify">
+              <p class="card-text">
+                My name is <strong>Rigo A Pinell</strong>. I specialize in
+                building applications for desktop, web, and mobile devices. I
+                am currently enrolled in the
+                <strong>Flex Stack Coding Boot Camp</strong> at
+                <strong>Kansas University</strong> where I am learning to
+                develop, test, and deploy web and mobile applications using HTML, CSS,
+                JavaScript, Bootstrap, Tailwind CSS, JQuery, Node.JS, Express.JS, Sequelize, MySQL, JawsDB, Express
+                Handlebars,
+                and other frameworks and libraries including Inquirer, Jest, Dotenv, Express Session, Connect Session
+                Sequelize,
+                Bcrypt, DayJS, Google Fonts, and Font Awesome.
+              </p>
+              <p class="card-text">
+                On my spare time, I enjoy reading business, science, and technology books, playing chess and
+                basketball with family and friends, and, of course, playing and having fun with my wife and my two kids.
+                I have
+                no pets as these little ones keep me busy already.
+              </p>
+              <p class="card-text">
+                Would you like to know more about the <em>cool</em> projects I
+                am building? Check them out <a href="#projects">here</a>. Want
+                to connect, follow, or contact me to talk about my
+                professional career? Click <a href="#contact">here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Me -->
+    <!-- Projects -->
+    <section id="projects">
+      <h1 class="display-4">
+        My Projects
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#myProjects"
+          aria-expanded="false" aria-controls="myProjects" id="showMyProjects">
+          <i class="fas fa-chevron-up" aria-hidden="true" id="showMyProjectsIcon"></i>
+        </button>
+      </h1>
+      <!-- Projects -->
+      <div class="card mb-3" id="myProjects">
+        <!-- Project 1 -->
+        <div class="row col-12 no-gutters">
+          <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/" target="_blank">
+                <img class="card-img" src="./assets/images/project1.png" alt="Delivery Done Right" width="50%" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-body text-justify">
+              <div class="text-center">
+                <strong>Project 1 - Delivery Done Right</strong>
+              </div>
+              <p class="card-text">
+                A Javascript web application that allows users to search and filter
+                restaurants near by using predefined search fields that includes
+                <em>food description</em>, <em>zipcode</em>, and
+                <em>distance</em>.
+              </p>
+              <p>
+                The application provides users with a list of restaurants near by and information on whether the
+                restaurant delivers food to the customer or not. A key feature is that it provides nutritional facts
+                about the chosen food.
+              </p>
+              <p>
+                On the technology side, the application features the use of external APIs including <strong>Google
+                  Maps</strong>,
+                <strong>Nutrition IX</strong>, and <strong>Open Weather</strong>.
+              </p>
+              <p>
+                Finally, the application was developed in conjunction with other students attending the Full Stack
+                Coding Bootcamp at Kansas University.
+                In this project, I fulfilled the roles of Project Manager and Full Stack Developer.
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/" target="_blank">GitHub
+                  Pages</a>, and the code in
+                <a href="https://github.com/japinell/KU-CBC-Project-1-Delivery-Done-Right" target="_blank">GitHub
+                  Repository</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-2">HTML</span></li>
+                <li><span class="badge badge-secondary p-2">CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-2">JavaScript</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-2">BootStrap</span>
+                </li>
+                <li><span class="badge badge-secondary p-2">JQuery</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Project 1 -->
+        <!-- Project 2 -->
+        <div class="row col-12 no-gutters">
+          <div class="col-md-6">
+            <div class="card-body text-justify">
+              <div class="text-center">
+                <strong>Project 2 - The Event Planning</strong>
+              </div>
+              <p class="card-text">
+                A NodeJS application that allows users to organize event details including
+                guests and their preferences. It allows users to register for an account
+                before they are able to create events. Events information is persisted in
+                a MySQL database, and retrieved and/or updated through the use of APIs.
+              </p>
+              <p>
+                The application features the use of the Model-View-Controller (MVC) paradigm.
+                It was developed with <strong>NodeJS</strong>, <strong>Sequelizer</strong>, <strong>ExpressJS</strong>,
+                <strong>MySQL</strong>, <strong>Express Handlebars</strong>, and <strong>Tailwind CSS</strong>, in
+                addition to
+                <em>Bcrypt</em>, <em>Connect Session Sequelize</em>, <em>Dotenv</em>, and <em>Express Session</em>.
+              </p>
+              <p>
+                Like Project 1, the application was developed in conjunction with other students attending the Full
+                Stack Coding Bootcamp at Kansas University.
+                In this project, the team followed best practices for Agile Project Management, and extensively used the
+                Projects feature in GitHub,
+                along with branching, pull requests, merging, and issue tracking. I fulfilled the role of Application
+                Architect and Full Stack Developer.
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://the-event-planning.herokuapp.com/" target="_blank">Heroku
+                  Pages</a>, and the code in
+                <a href="https://github.com/brownnicholasj/the-event-planning" target="_blank">GitHub
+                  Repository</a>. A video demonstrating the application is also provided in <a
+                  href="https://www.youtube.com/watch?v=f7PHbfA8EzE" target="_blank">Youtube</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-2">HTML</span></li>
+                <li><span class="badge badge-secondary p-2">Tailwind CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-2">JavaScript</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-2">NodeJS</span>
+                </li>
+                <li><span class="badge badge-secondary p-2">ExpressJS</span></li>
+                <li><span class="badge badge-secondary p-2">MySQL</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://github.com/brownnicholasj/the-event-planning/" target="_blank">
+                <img class="card-img" src="./assets/images/project2.png" alt="The Event Planning" width="50%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End of Project 2 -->
+        <!-- Exemplary Homeworks -->
+        <div class="row no-gutters">
+          <!-- Exemplary Homework 1 -->
+          <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://japinell.github.io/KU-CBC-Homework-6-Weather-Dashboard/" target="_blank">
+                <img class="card-img" src="./assets/images/weather-dashboard.png" alt="Weather Dashboard" width="50%" />
+              </a>
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>Weather Dashboard</strong>
+              </p>
+              <p class="card-text">
+                Weather dashboard that runs in the browser and use the
+                <strong>OpenWeather One Call API</strong> to retrieve weather
+                data for cities. The application renders data using HTML
+                generated dynamically and uses localStorage to store
+                persistent data.
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://japinell.github.io/KU-CBC-Homework-6-Weather-Dashboard/" target="_blank">GitHub
+                  Pages</a>, and the code in
+                <a href="https://github.com/japinell/KU-CBC-Homework-6-Weather-Dashboard/" target="_blank">GitHub
+                  Repository</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-2">HTML</span></li>
+                <li><span class="badge badge-secondary p-2">CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-2">JavaScript</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-2">BootStrap</span>
+                </li>
+                <li><span class="badge badge-secondary p-2">JQuery</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Exemplary Homework 1 -->
+          <!-- Exemplary Homework 2 -->
+          <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://github.com/japinell/KU-CBC-Homework-12-Employee-Tracker/" target="_blank">
+                <img class="card-img" src="./assets/images/homework12.png" alt="Employee Tracker" width="50%" />
+              </a>
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>Employee Tracker</strong>
+              </p>
+              <p class="card-text">
+                A NodeJS application for managing a company's employees using <strong>NodeJS</strong>,
+                <strong>Inquirer</strong>, and <strong>MySQL</strong>.
+                The application makes it easy for end users to view and interact with information stored in the
+                database. It allows users to:
+                <ul>
+                  <li>Add departments, roles, employees</li>
+                  <li>View departments, roles, employees</li>
+                  <li>Update employee roles</li>
+                </ul>
+              </p>
+              <p class="card-text">
+                The code is available in the <a href="https://github.com/japinell/KU-CBC-Homework-12-Employee-Tracker/"
+                  target="_blank">GitHub
+                  Repository</a> along with videos demonstrating how to set up, seed, and run the application.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-3">NodeJS</span></li>
+                <li><span class="badge badge-secondary p-3">Inquirer</span></li>
+                <li>
+                  <span class="badge badge-secondary p-3">MySQL</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- End of Exemplary Homework 2 -->
+          <!-- Exemplary Homework 3 -->
+          <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://github.com/japinell/KU-CBC-Homework-13-E-Commerce-Back-End/" target="_blank">
+                <img class="card-img" src="./assets/images/homework13.png" alt="E-Commerce Back End" width="50%" />
+              </a>
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>E-Commerce Backend</strong>
+              </p>
+              <p class="card-text">
+                A NodeJS/ExpressJS Back End application to manage a company's Categories, Products, and Tags for an E-Commerce
+                website using <strong>NodeJS</strong>, <strong>ExpressJS</strong>, <strong>Sequelize</strong>, <strong>MySQL</strong>,
+                and <strong>Insomnia</strong>. The application makes it easy to view and/or update information stored in the database. 
+                It allows users to:
+                <ul>
+                  <li>Add categories, products, tags</li>
+                  <li>View categories, products, tags</li>
+                  <li>Update categories, products, tags</li>
+                  <li>Delete categories, products, tags</li>
+                </ul>
+              </p>
+              <p class="card-text">
+                The application features the use of <strong>Database Models</strong> to define the logical structure of the database using Sequelize and MySQL. 
+                The code is available in the <a
+                  href="https://github.com/japinell/KU-CBC-Homework-13-E-Commerce-Back-End/" target="_blank">GitHub
+                  Repository</a> along with videos demonstrating how to set up, seed, and run the application.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-3">NodeJS</span></li>
+                <li><span class="badge badge-secondary p-3">ExpressJS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-3">Sequelize</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-3">MySQL</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- End of Exemplary Homework 3 -->
+           <!-- Exemplary Homework 4 -->
+           <div class="col-md-6">
+            <div class="card-header card-custom">
+              <a href="https://ku-cbc-homework-14-tech-blog.herokuapp.com/" target="_blank">
+                <img class="card-img" src="./assets/images/homework14.png" alt="Tech Blog" width="50%" />
+              </a>
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>Tech Blog</strong>
+              </p>
+              <p class="card-text">
+                A CMS-style web application where developers can publish their blog posts and comment on other developers’ posts. 
+                The application was built completely from scratch and deployed to Heroku. The application follows the MVC paradigm in its architectural structure, 
+                and uses <strong>Express Handlebars</strong> as the templating language, <strong>Sequelize</strong> as the ORM, the <strong>express-session</strong> 
+                npm package for authentication, and <strong>Bootstrap</strong> for styling.
+              </p>
+              <p class="card-text">
+                The application features the use of <strong>Database Models</strong> to define the logical structure of the database using Sequelize and MySQL. 
+                The code is available in the <a
+                  href="https://github.com/japinell/KU-CBC-Homework-14-Tech-Blog/" target="_blank">GitHub
+                  Repository</a> along with videos demonstrating how to set up, seed, and run the application.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-3">NodeJS</span></li>
+                <li><span class="badge badge-secondary p-3">ExpressJS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-3">Sequelize</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-3">MySQL</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-3">Express Handlebars</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- End of Exemplary Homework 4 -->
+        </div>
+        <!-- End of Exemplary Homeworks -->
+    </section>
+    <!-- End of Projects -->
+  </main>
+  <!-- End of Main -->
+  <!-- Footer -->
+  <footer class="p-3" id="contact">
+    <!-- Logo -->
+    <h1 class="display-4">
+      Contact Me
+    </h1>
+    <p class="card-text">
+      Interested in knowing more about the <em>future</em> projects I
+      will be building? Want
+      to connect, follow, or contact me to know more about my
+      professional career? Contact me through any of the following means:
+    </p>
+    <!-- End of Logo -->
+    <!-- Navigation -->
+    <nav>
+      <!-- Links -->
+      <div class="content">
+        <a href="" target="" class="phone"> 1-NOT-DIS-CLOSED </a>
+        <a href="mailto:japinell@yahoo.com" target="_blank" class="email">japinell@yahoo.com
+        </a>
+        <a href="https://www.linkedin.com/in/japinell/" target="_blank" class="linkedin">https://www.linkedin.com/in/japinell/</a>
+        <a href="https://github.com/japinell" target="_blank" class="github">https://github.com/japinell</a>
+        <a href="https://twitter.com/japinell" target="_blank" class="twitter">https://twitter.com/japinell</a>
+        <a href="https://spotify.com/japinell" target="_blank" class="spotify">https://spotify.com/japinell</a>
+      </div>
+      <!-- End of Links -->
+    </nav>
+    <!-- End of Navigation -->
+  </footer>
+  <!-- End of Header -->
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+  <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
+  <script>
+    dayjs.extend(window.dayjs_plugin_advancedFormat);
+    dayjs.extend(window.dayjs_plugin_weekOfYear);
+  </script>
+  <script src="./assets/js/script.js"></script>
+  <!-- End of JavaScript Libraries -->
+</body>
+
+</html>
