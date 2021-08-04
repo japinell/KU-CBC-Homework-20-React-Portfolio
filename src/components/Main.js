@@ -1,5 +1,5 @@
 import React from "react";
-import About from "./About";
+import About from "./main/about/About";
 
 function Main() {
   return (
