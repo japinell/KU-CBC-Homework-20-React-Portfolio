@@ -1,9 +1,9 @@
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
-import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
 function App() {
-  return <About />;
+  return <Portfolio />;
 }
 
 export default App;
