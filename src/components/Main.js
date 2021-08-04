@@ -1,12 +1,10 @@
 import React from "react";
-import AboutHeading from "./AboutHeading";
-import AboutCard from "./AboutCard";
+import About from "./About";
 
 function Main() {
   return (
     <main>
-      <AboutHeading />
-      <AboutCard />
+      <About />
     </main>
   );
 }
