@@ -8,7 +8,7 @@ function ProjectCard({ projects }) {
         <div className="row col-12 no-gutters" key={project.id}>
           <div className="col-md-6">
             <div className="card-header card-custom">
-              <a href={project.projectLink}>
+              <a href={project.liveUrl} target="_blank" rel="noreferrer">
                 <img
                   className="card-img"
                   src={project.image}
@@ -29,12 +29,12 @@ function ProjectCard({ projects }) {
                 </p>
               ))}
               <p className="card-text">
-                Check out the live application in
-                <a href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/">
-                  GitHub Pages
+                Check out the live application in{" "}
+                <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                  {project.liveServer}
                 </a>
-                , and the code in
-                <a href="https://github.com/japinell/KU-CBC-Project-1-Delivery-Done-Right">
+                , and the code in{" "}
+                <a href={project.gitHubRepo} target="_blank" rel="noreferrer">
                   GitHub Repository
                 </a>
                 .
@@ -43,21 +43,13 @@ function ProjectCard({ projects }) {
                 The application uses the following technologies:
               </p>
               <ul className="d-flex flex-row justify-content-around list-group list-group-horizontal">
-                <li>
-                  <span className="badge badge-secondary p-2">HTML</span>
-                </li>
-                <li>
-                  <span className="badge badge-secondary p-2">CSS</span>
-                </li>
-                <li>
-                  <span className="badge badge-secondary p-2">JavaScript</span>
-                </li>
-                <li>
-                  <span className="badge badge-secondary p-2">BootStrap</span>
-                </li>
-                <li>
-                  <span className="badge badge-secondary p-2">JQuery</span>
-                </li>
+                {project.technologies.map((technology, index) => (
+                  <li key={index}>
+                    <span className="badge badge-secondary p-2">
+                      {technology}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
