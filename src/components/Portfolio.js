@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./Header";
 import Hero from "./Hero";
-import About from "./main/about/About";
+import Main from "./Main";
 
 function Portfolio() {
   return (
     <div>
       <Header />
       <Hero />
-      <About />
+      <Main />
     </div>
   );
 }
