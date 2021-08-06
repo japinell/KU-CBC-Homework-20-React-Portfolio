@@ -1,16 +1,40 @@
-import React from "react";
+//
+import React, { useState } from "react";
 import Header from "./Header";
-import Hero from "./Hero";
-import Main from "./Main";
-import Footer from "./Footer";
-
+import About from "./about/About";
+import Projects from "./projects/Projects";
+// import Hero from "./Hero";
+// import Main from "./Main";
+// import Footer from "./Footer";
+//
+// Main page
+//
 function Portfolio() {
+  //  Track changes to the selection of current page
+  const [currentPage, setCurrentPage] = useState("About");
+  //  Render current page
+  const renderPage = () => {
+    switch (currentPage) {
+      case "About":
+        return <About />;
+      case "Projects":
+        return <Projects />;
+      case "Contact":
+        return <About />;
+      default:
+        return <About />;
+    }
+  };
+  //  Set current page
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <div>
-      <Header />
-      <Hero />
-      <Main />
-      <Footer />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+      {/* <Hero /> */}
+      {/* <Main /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
