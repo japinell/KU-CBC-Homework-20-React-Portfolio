@@ -1,8 +1,12 @@
+//
 import React from "react";
-
-function AboutCard() {
+//
+// Render the about section
+//
+function About() {
   return (
     <div className="card mb-3" id="aboutMe">
+      <h1 className="display-4">About Me</h1>
       <div className="row no-gutters">
         <div className="col-md-6">
           <img
@@ -47,4 +51,4 @@ function AboutCard() {
   );
 }
 
-export default AboutCard;
+export default About;
