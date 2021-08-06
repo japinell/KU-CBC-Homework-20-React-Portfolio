@@ -1,9 +1,9 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 
-function ProjectCard({ projects }) {
+function Projects({ projects }) {
   return (
     <div className="card mb-3" id="myProjects">
+      <h1 className="display-4">Projects</h1>
       {projects.map((project) => (
         <div className="row col-12 no-gutters" key={project.id}>
           <div className="col-md-6">
@@ -59,4 +59,4 @@ function ProjectCard({ projects }) {
   );
 }
 
-export default ProjectCard;
+export default Projects;

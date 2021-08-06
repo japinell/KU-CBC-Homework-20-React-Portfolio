@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import About from "./About";
-import Projects from "./projects/Projects";
+import Projects from "./Projects";
+import projectData from "./ProjectData";
 // import Hero from "./Hero";
 // import Main from "./Main";
 // import Footer from "./Footer";
@@ -18,7 +19,7 @@ function Portfolio() {
       case "About":
         return <About />;
       case "Projects":
-        return <Projects />;
+        return <Projects projects={projectData} />;
       case "Contact":
         return <About />;
       default:
