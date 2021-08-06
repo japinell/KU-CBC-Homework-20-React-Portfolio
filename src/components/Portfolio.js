@@ -4,8 +4,8 @@ import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 import projectData from "./ProjectData";
-// import Main from "./Main";
 // import Footer from "./Footer";
 //
 // Main page
@@ -21,7 +21,7 @@ function Portfolio() {
       case "Projects":
         return <Projects projects={projectData} />;
       case "Contact":
-        return <About />;
+        return <Contact />;
       default:
         return <Hero />;
     }

@@ -42,19 +42,19 @@ function Header({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="./assets/files/resume.pdf"
-                target="_blank"
+                href="#contact"
+                onClick={() => handlePageChange("Contact")}
               >
-                Resume
+                Contact
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
+                href="./assets/files/resume.pdf"
+                target="_blank"
               >
-                Contact
+                Resume
               </a>
             </li>
           </ul>
