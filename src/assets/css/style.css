@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600); */
 /*
   VARIABLES    
 */
@@ -195,7 +195,7 @@ footer a:hover {
   color: yellow;
 }
 
-.container {
+.contact-form {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
