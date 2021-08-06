@@ -1,5 +1,8 @@
+//
 import React from "react";
-
+//
+// Render the projects section
+//
 function Projects({ projects }) {
   return (
     <div className="card mb-3" id="myProjects">

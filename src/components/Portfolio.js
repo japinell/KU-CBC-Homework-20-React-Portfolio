@@ -1,10 +1,10 @@
 //
 import React, { useState } from "react";
 import Header from "./Header";
+import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
 import projectData from "./ProjectData";
-// import Hero from "./Hero";
 // import Main from "./Main";
 // import Footer from "./Footer";
 //
@@ -23,7 +23,7 @@ function Portfolio() {
       case "Contact":
         return <About />;
       default:
-        return <About />;
+        return <Hero />;
     }
   };
   //  Set current page

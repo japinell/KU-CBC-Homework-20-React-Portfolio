@@ -23,11 +23,9 @@ function Header({ currentPage, handlePageChange }) {
           <ul className="nav navbar-nav">
             <li className="nav-item active">
               <a
+                className="nav-link"
                 href="#about"
                 onClick={() => handlePageChange("About")}
-                className={
-                  currentPage === "About" ? "nav-link active" : "nav-link"
-                }
               >
                 About Me <span className="sr-only">(current)</span>
               </a>
