@@ -3,9 +3,9 @@ import React from "react";
 //
 // Render the about section
 //
-function About({ currentPage, handlePageChange }) {
+function About({ handlePageChange }) {
   return (
-    <div className="container-fluid intro" id="about">
+    <div className="container-fluid about" id="about">
       <div className="container">
         <h2>About Me</h2>
         <div className="card-body text-justify">

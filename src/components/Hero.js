@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="container-fluid splash" id="splash">
+    <div className="container-fluid hero" id="splash">
       <div className="container">
         <img
           src="./assets/images/family.jpg"

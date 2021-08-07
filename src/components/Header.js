@@ -3,7 +3,7 @@ import React from "react";
 //
 // Render the navigation bar
 //
-function Header({ currentPage, handlePageChange }) {
+function Header({ handlePageChange }) {
   return (
     <header>
       <nav className="container-fluid nav">

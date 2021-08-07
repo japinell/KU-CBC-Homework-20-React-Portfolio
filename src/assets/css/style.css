@@ -4,6 +4,19 @@
 */
 :root {
   --working-area: 75%;
+  --charcoal: hsla(197, 37%, 24%, 1);
+  --persian-green: hsla(173, 52%, 34%, 1);
+  --orange-yellow-crayola: hsla(43, 74%, 66%, 0.1);
+  --sandy-brown: hsla(27, 87%, 67%, 1);
+  --burnt-sienna: hsla(12, 76%, 61%, 1);
+
+  --background-navbar: #2a9d8f;
+  --background-about: #2a9d8f; /* #e74c3c; */
+  --background-projects: #e76f51;
+  --background-contact: #f4a261;
+
+  --color-navbar: #2a9d8f;
+
   --chocoyo-green: #276721;
   --chocoyo-dark-green: #0c1b07;
   --chocoyo-yellow: #969c24;
@@ -180,14 +193,17 @@ nav.sticky {
   clear: both;
 }
 
-.splash {
-  background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+.hero {
+  background: /*linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),*/ linear-gradient(
+      var(--orange-yellow-crayola),
+      var(--persian-green)
+    ),
     url("../images/chocoyos.jpg") no-repeat fixed center;
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
 }
 
-.splash .container {
+.hero .container {
   padding-top: 25vh; /* No JS fallback*/
   padding-bottom: 25vh; /* No JS fallback*/
 }
@@ -200,29 +216,29 @@ nav.sticky {
   width: 100%;
 }
 
-.splash h1 {
+.hero h1 {
   font-size: 3em;
   margin-bottom: 0.15em;
   text-align: center;
 }
 
-.splash .lead,
-.splash .continue {
+.hero .lead,
+.hero .continue {
   display: block;
   text-align: center;
 }
 
-.splash .lead {
+.hero .lead {
   font-size: 1.5em;
   font-weight: 100;
   margin-bottom: 1em;
 }
 
-.splash .continue {
+.hero .continue {
   font-size: 4em;
 }
 
-.splash .continue a {
+.hero .continue a {
   border: 4px solid #fff;
   border-radius: 100%;
   color: #fff;
@@ -230,34 +246,34 @@ nav.sticky {
   text-decoration: none;
   width: 80px;
 }
-.splash .continue a:hover {
+.hero .continue a:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.intro .container,
+.about {
+  background-color: var(--persian-green);
+  color: #fff;
+}
+
+.about .container,
 .features .container,
 .portfolio .container,
 .contact .container {
   padding: 5em 0;
 }
 
-.intro,
+.about,
 .features,
 .portfolio,
 .contact {
   text-align: center;
 }
 
-.intro {
-  background-color: #e74c3c;
-  color: #fff;
-}
-
-.intro a,
-.intro a:hover,
-.intro a:focus,
-.intro a:active,
-.intro a:visited {
+.about a,
+.about a:hover,
+.about a:focus,
+.about a:active,
+.about a:visited {
   color: #fff;
 }
 
@@ -408,11 +424,11 @@ Media Queries
     padding: 0;
   }
 
-  .splash h1 {
+  .hero h1 {
     font-size: 6em;
   }
 
-  .splash .lead {
+  .hero .lead {
     font-size: 3em;
   }
 

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Home from "./Home";
 import Header from "./Header";
-import Hero from "./Hero";
+// import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
