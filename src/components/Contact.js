@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="col-xs-12 col-sm-9 text-center-xs text-left-sm">
       <h1>Contact Me</h1>
-      <form className="form login-form">
+      <form className="form contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input className="form-control" type="text" id="name" name="name" />

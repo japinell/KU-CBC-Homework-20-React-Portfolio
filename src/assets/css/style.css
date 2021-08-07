@@ -1,296 +1,430 @@
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600); */
-/*
-  VARIABLES    
-*/
-:root {
-  --working-area: 100%;
-  --chocoyo-green: #276721;
-  --chocoyo-dark-green: #0c1b07;
-  --chocoyo-yellow: #969c24;
-  --flower-orange: #ef6100;
-  --screen-size-xs: 0;
-  --screen-size-sm: 576px;
-  --screen-size-md: 768px;
-  --screen-size-lg: 992px;
-  --screen-size-xl: 1200px;
-  --header-font-family: "Papyrus", "Montserrat", "Sans-Serif";
-  --body-font-family: "Montserrat", "Sans-Serif";
-  --nav-font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    "Sans-Serif";
-  --fsize: 10px;
-}
+/* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
 
-/*
-  GENERAL    
-*/
+/* ========================
+Utilities
+======================== */
+
 * {
   box-sizing: border-box;
+}
+
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+
+.cf::after {
+  clear: both;
+}
+
+html {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========================
+Global
+======================== */
+
+body {
+  color: #444;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: var(--body-font-family);
-  line-height: 1.7rem;
-  background-color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin-top: 0;
 }
 
-img {
-  border-style: none;
-  vertical-align: middle;
+h1 {
+  font-weight: 900;
 }
 
-/*
-  HEADER     
-*/
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+p {
+  line-height: 1.5;
 }
 
-.custom-toggler.navbar-toggler {
-  border-color: var(--chocoyo-yellow);
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: #e74c3c;
+  text-decoration: underline;
 }
 
-header {
-  background-color: var(--chocoyo-dark-green);
-  color: var(--chocoyo-yellow);
-  border: 1px dashed var(--chocoyo-dark-green);
+/* ========================
+Containers
+======================== */
+
+.container-fluid {
+  padding: 0 1em;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: white;
-  border-bottom: 2px solid yellow;
-}
-
-.hero {
-  background-image: url("../images/chocoyos.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  border: 1px dashed var(--chocoyo-dark-green);
-
-  height: 940px;
-  width: var(--working-area);
-  margin: auto;
-}
-
-main section div div.polaroid {
-  background-color: white;
-  margin-bottom: 15px;
-  border: 1px solid #dddddd;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 50%;
-}
-
-main section div div.label {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-main section.container div.project-card div.full > a:hover,
-main section.container div.project-card div.split > a:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 var(--chocoyo-dark-green);
-}
-
-.card-custom {
-  background-color: var(--primary-color);
-  color: black;
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* FOOTER */
-footer {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: var(--chocoyo-dark-green);
-  color: var(--chocoyo-yellow);
-  border: 1px dashed var(--chocoyo-dark-green);
-  width: var(--working-area);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-footer > nav {
-  font-family: var(--nav-font-family);
-  font-size: 1.5rem;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-
-  width: 100%;
-  padding: 15px;
-  padding-top: 0px;
-}
-
-footer nav .content {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  display: inline-block;
-
-  position: relative;
-  width: 100%;
-  padding: 15px;
-
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-footer span {
-  /* color: var(--chocoyo-yellow); */
-  color: white;
-  padding: 0px;
-}
-
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-
-  padding: 0px;
-}
-
-footer div > .phone::before {
-  content: "Phone: ";
-  text-decoration: none;
-}
-
-footer div > .email::before {
-  content: "Email: ";
-}
-
-footer div > .github::before {
-  content: "GitHub: ";
-}
-
-footer div > .twitter::before {
-  content: "Twitter: ";
-}
-
-footer div > .spotify::before {
-  content: "Spotify: ";
-}
-
-footer a::after {
-  content: " |";
-}
-
-footer a:last-child::after {
-  content: unset;
-}
-
-footer a:hover {
-  border-bottom: 1px solid var(--chocoyo-green);
-  color: yellow;
-}
-
-.contact-form {
-  max-width: 400px;
-  width: 100%;
+.container {
   margin: 0 auto;
+  max-width: 996px;
+}
+
+/* ========================
+Navigation
+======================== */
+
+@-webkit-keyframes show-header {
+  0% {
+    top: -4em;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes show-header {
+  0% {
+    top: -4em;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
   position: relative;
+  top: 0;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+nav a,
+nav a:hover,
+nav a:focus,
+nav a:active,
+nav a:visited {
+  text-decoration: none;
 }
 
-#contact {
-  background: #f9f9f9;
-  padding: 25px;
-  margin: 50px 0;
+nav .brand {
+  display: inline-block;
+  float: left;
+  font-size: 1.25em;
+  font-weight: 900;
 }
 
-#contact h3 {
-  color: #f96;
+nav .brand a {
+  color: #444;
   display: block;
-  font-size: 30px;
-  font-weight: 400;
+  padding: 1em 0;
 }
 
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #fff;
-  margin: 0 0 5px;
-  padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
-}
-
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-
-#contact button[type="submit"] {
+nav .nav-toggle {
+  color: #444;
   cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 1.25em;
+  padding: 1em 0;
+  z-index: 1000;
+}
+
+nav ul {
+  border-top: 1px solid #ccc;
+  clear: both;
+  list-style: none;
+  margin: 0 -1em;
+  padding: 0;
+  z-index: 999;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #444;
+  display: block;
+  padding: 0.75em;
+}
+
+nav.sticky {
+  -webkit-animation: show-header 0.5s ease;
+  animation: show-header 0.5s ease;
+  position: fixed;
+  top: 0;
   width: 100%;
-  border: none;
-  background: #0cf;
+}
+
+/* ========================
+Sections
+======================== */
+
+.splash {
+  background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+    url("../images/chocoyos.jpg") no-repeat fixed center;
+  background-size: cover;
   color: #fff;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
-  background: #09c;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+.splash .container {
+  padding-top: 25vh; /* No JS fallback*/
+  padding-bottom: 25vh; /* No JS fallback*/
 }
 
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 1em;
+  width: 100%;
 }
 
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #999;
+.splash h1 {
+  font-size: 3em;
+  margin-bottom: 0.15em;
+  text-align: center;
+}
+
+.splash .lead,
+.splash .continue {
+  display: block;
+  text-align: center;
+}
+
+.splash .lead {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.splash .continue {
+  font-size: 4em;
+}
+
+.splash .continue a {
+  border: 4px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+}
+.splash .continue a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.intro .container,
+.features .container,
+.portfolio .container,
+.contact .container {
+  padding: 5em 0;
+}
+
+.intro,
+.features,
+.portfolio,
+.contact {
+  text-align: center;
+}
+
+.intro {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.intro a,
+.intro a:hover,
+.intro a:focus,
+.intro a:active,
+.intro a:visited {
+  color: #fff;
+}
+
+.features img {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 200px;
+}
+
+.features .col-3 {
+  margin: 3em auto;
+  width: 100%;
+}
+
+.portfolio {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.gallery .gallery-image {
+  margin: 1em auto;
+  width: 100%;
+}
+
+.gallery .gallery-image img {
+  background-color: #23648f;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  padding: 6px;
+  width: 100%;
+}
+
+.contact form {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  border-top: 8px solid #e74c3c;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 1em;
+}
+
+.contact form input,
+.contact form textarea {
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+.contact form textarea {
+  height: 6em;
+}
+
+.contact form input[type="submit"] {
+  background-color: #e74c3c;
+  border-radius: 0;
+  color: #fff;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+/* ========================
+Footer
+======================== */
+
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer .container {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: #fff;
+  margin-right: 1em;
+}
+
+.footer a:last-of-type {
+  margin-right: 0;
+}
+
+/* ========================
+Media Queries
+======================== */
+
+@media (min-width: 768px) {
+  nav .nav-toggle {
+    display: none;
+  }
+
+  nav ul {
+    border: none;
+    clear: none;
+    display: inline-block !important;
+    float: right;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  nav ul li {
+    border: none;
+    display: inline-block;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+
+  nav ul li a {
+    padding: 0;
+  }
+
+  .splash h1 {
+    font-size: 6em;
+  }
+
+  .splash .lead {
+    font-size: 3em;
+  }
+
+  .features .col-3 {
+    float: left;
+    margin: 2em 5% 0 0;
+    padding: 0 1em;
+    width: 30%;
+  }
+
+  .features .col-3:last-of-type {
+    margin-right: 0;
+  }
+
+  .gallery .gallery-image {
+    float: left;
+    margin-right: 2.5%;
+    width: 31.6666666667%;
+  }
+
+  .gallery .gallery-image:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .contact form {
+    padding: 3em 2em 2em;
+  }
+
+  .contact form input[type="submit"] {
+    padding: 1em 3em;
+    width: auto;
+  }
+
+  .contact form input.full-half {
+    float: left;
+    margin-right: 2.5%;
+    width: 48.75%;
+  }
+
+  .contact form input.full-half:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .contact form textarea {
+    height: 12em;
+  }
 }

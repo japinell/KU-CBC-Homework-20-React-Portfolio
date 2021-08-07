@@ -6,56 +6,35 @@ import React from "react";
 function Header({ currentPage, handlePageChange }) {
   return (
     <header>
-      <nav className="navbar navbar-expand-md">
-        <h1 className="navbar-brand">Chocoyo Portfolio</h1>
-        <button
-          className="navbar-toggler custom-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="nav navbar-nav">
-            <li className="nav-item active">
-              <a
-                className="nav-link"
-                href="#about"
-                onClick={() => handlePageChange("About")}
-              >
-                About Me <span className="sr-only">(current)</span>
+      <nav className="container-fluid nav">
+        <div className="container cf">
+          <div className="brand">
+            <a href="#splash">Chocoyo Portfolio</a>
+          </div>
+          <i className="fa fa-bars nav-toggle"></i>
+          <ul>
+            <li>
+              <a href="/" onClick={() => handlePageChange("Home")}>
+                Home
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#projects"
-                onClick={() => handlePageChange("Projects")}
-              >
+            <li>
+              <a href="#about" onClick={() => handlePageChange("About")}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => handlePageChange("Projects")}>
                 Projects
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
-              >
+            <li>
+              <a href="#contact" onClick={() => handlePageChange("Contact")}>
                 Contact
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="./assets/files/resume.pdf"
-                target="_blank"
-              >
-                Resume
-              </a>
+            <li>
+              <a href="#skills">Resume</a>
             </li>
           </ul>
         </div>

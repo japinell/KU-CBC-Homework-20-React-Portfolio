@@ -1,5 +1,6 @@
 //
 import React, { useState } from "react";
+import Home from "./Home";
 import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
@@ -12,10 +13,12 @@ import projectData from "./ProjectData";
 //
 function Portfolio() {
   //  Track changes to the selection of current page
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
   //  Render current page
   const renderPage = () => {
     switch (currentPage) {
+      case "Home":
+        return <Home />;
       case "About":
         return <About />;
       case "Projects":
