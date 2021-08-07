@@ -18,15 +18,35 @@ function Portfolio() {
   const renderPage = () => {
     switch (currentPage) {
       case "Home":
-        return <Home />;
+        return (
+          <Home currentPage={currentPage} handlePageChange={handlePageChange} />
+        );
       case "About":
-        return <About />;
+        return (
+          <About
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        );
       case "Projects":
-        return <Projects projects={projectData} />;
+        return (
+          <Projects
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+            projects={projectData}
+          />
+        );
       case "Contact":
-        return <Contact />;
+        return (
+          <Contact
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        );
       default:
-        return <Hero />;
+        return (
+          <Home currentPage={currentPage} handlePageChange={handlePageChange} />
+        );
     }
   };
   //  Set current page

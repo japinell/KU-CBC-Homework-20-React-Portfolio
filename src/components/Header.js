@@ -7,7 +7,7 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <header>
       <nav className="container-fluid nav">
-        <div className="container cf">
+        <div className="container custom-container-fluid">
           <div className="brand">
             <a href="#splash">Chocoyo Portfolio</a>
           </div>

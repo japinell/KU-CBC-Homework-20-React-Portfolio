@@ -3,7 +3,7 @@ import React from "react";
 //
 // Render the about section
 //
-function About() {
+function About({ currentPage, handlePageChange }) {
   return (
     <div className="container-fluid intro" id="about">
       <div className="container">
@@ -13,8 +13,8 @@ function About() {
             My name is <strong>Rigo A Pinell</strong>. I specialize in building
             applications for desktop, web, and mobile devices. I am currently
             enrolled in the
-            <strong>Flex Stack Coding Boot Camp</strong> at
-            <strong>Kansas University</strong> where I am learning to develop,
+            <strong> Flex Stack Coding Boot Camp </strong> at
+            <strong> Kansas University</strong> where I am learning to develop,
             test, and deploy web and mobile applications using HTML, CSS,
             JavaScript, Bootstrap, Tailwind CSS, JQuery, Node.JS, Express.JS,
             Sequelize, MySQL, JawsDB, Express Handlebars, and other frameworks
@@ -30,9 +30,16 @@ function About() {
           </p>
           <p className="card-text">
             Would you like to know more about the <em>cool</em> projects I am
-            building? Check them out <a href="#projects">here</a>. Want to
-            connect, follow, or contact me to talk about my professional career?
-            Click <a href="#contact">here</a>.
+            building? Check them out{" "}
+            <a href="#projects" onClick={() => handlePageChange("Projects")}>
+              here
+            </a>
+            . Want to connect, follow, or contact me to talk about my
+            professional career? Click{" "}
+            <a href="#contact" onClick={() => handlePageChange("Contact")}>
+              here
+            </a>
+            .
           </p>
         </div>
       </div>

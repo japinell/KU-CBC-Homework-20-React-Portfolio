@@ -5,11 +5,11 @@ import About from "./About";
 //
 // Render the home page
 //
-function Home() {
+function Home({ currentPage, handlePageChange }) {
   return (
     <div>
       <Hero />
-      <About />
+      <About currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

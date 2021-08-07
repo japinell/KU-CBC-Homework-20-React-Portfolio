@@ -5,7 +5,7 @@ function Hero() {
     <div className="container-fluid splash" id="splash">
       <div className="container">
         <img
-          src="https://s10.postimg.org/jvo3z5kux/QTr_B8o_S.jpg"
+          src="./assets/images/family.jpg"
           alt="Portrait of Mr. Roboto"
           className="profile-image"
         />

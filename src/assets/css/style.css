@@ -1,34 +1,52 @@
 /* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
-
-/* ========================
-Utilities
-======================== */
+/*
+  VARIABLES    
+*/
+:root {
+  --working-area: 75%;
+  --chocoyo-green: #276721;
+  --chocoyo-dark-green: #0c1b07;
+  --chocoyo-yellow: #969c24;
+  --flower-orange: #ef6100;
+  --screen-size-xs: 0;
+  --screen-size-sm: 576px;
+  --screen-size-md: 768px;
+  --screen-size-lg: 992px;
+  --screen-size-xl: 1200px;
+  --header-font-family: "Papyrus", "Montserrat", "Sans-Serif";
+  --body-font-family: "Montserrat", "Sans-Serif";
+  --nav-font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "Sans-Serif";
+  --fsize: 10px;
+}
 
 * {
   box-sizing: border-box;
-}
-
-.cf::before,
-.cf::after {
-  content: "";
-  display: table;
-}
-
-.cf::after {
-  clear: both;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   position: relative;
 }
 
-img {
-  max-width: 100%;
+/* header {
+  background-color: var(--chocoyo-dark-green);
+  color: var(--chocoyo-yellow);
+  border: 1px dashed var(--chocoyo-dark-green);
+} */
+
+body {
+  font-family: var(--body-font-family);
+  line-height: 1.7rem;
+  background-color: white;
 }
 
-/* ========================
-Global
-======================== */
+img {
+  border-style: none;
+  vertical-align: middle;
+  max-width: 100%;
+}
 
 body {
   color: #444;
@@ -67,45 +85,6 @@ a:active,
 a:visited {
   color: #e74c3c;
   text-decoration: underline;
-}
-
-/* ========================
-Containers
-======================== */
-
-.container-fluid {
-  padding: 0 1em;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 996px;
-}
-
-/* ========================
-Navigation
-======================== */
-
-@-webkit-keyframes show-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes show-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-  }
 }
 
 nav {
@@ -174,9 +153,32 @@ nav.sticky {
   width: 100%;
 }
 
-/* ========================
-Sections
-======================== */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--chocoyo-yellow);
+}
+
+.container-fluid {
+  padding: 0 1em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+
+.custom-container-fluid::before,
+.custom-container-fluid::after {
+  content: "";
+  display: table;
+}
+
+.custom-container-fluid::after {
+  clear: both;
+}
 
 .splash {
   background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
@@ -318,6 +320,36 @@ Sections
   padding: 1em;
   text-transform: uppercase;
 }
+
+/* ========================
+Navigation
+======================== */
+
+@-webkit-keyframes show-header {
+  0% {
+    top: -4em;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes show-header {
+  0% {
+    top: -4em;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* ========================
+Sections
+======================== */
 
 /* ========================
 Footer
