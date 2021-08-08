@@ -7,7 +7,7 @@ import "../assets/css/projects.css";
 function Projects({ projects, handlePageChange }) {
   return (
     <section id="focus" className="focus-section">
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map((project) => (
           <div className="col" key={project.id}>
             <div className="card shadow-sm h-100">

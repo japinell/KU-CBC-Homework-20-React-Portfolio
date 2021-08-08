@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import ProjectCarousel from "./ProjectCarousel";
 import Contact from "./Contact";
 import projectData from "./ProjectData";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 //
 // Main page
 //
@@ -57,6 +57,7 @@ function Portfolio() {
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* <Hero /> */}
       {/* <Main /> */}
       {/* <Footer /> */}

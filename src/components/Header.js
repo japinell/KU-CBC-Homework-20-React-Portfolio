@@ -48,7 +48,9 @@ function Header({ handlePageChange }) {
               </a>
             </li>
             <li>
-              <a href="#skills">Resume</a>
+              <a href="./assets/files/resume.pdf" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </div>

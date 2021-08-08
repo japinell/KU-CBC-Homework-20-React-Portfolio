@@ -7,6 +7,11 @@ function About({ handlePageChange }) {
   return (
     <div className="container-fluid about" id="about">
       <div className="container">
+        <img
+          src="./assets/images/picture.jpg"
+          alt="Portrait of Rigo A. Pinell"
+          className="profile-image"
+        />
         <h2>About Me</h2>
         <div className="card-body text-justify">
           <p className="card-text">
