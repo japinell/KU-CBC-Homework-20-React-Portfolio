@@ -8,6 +8,7 @@ This is a **React** application for my **Professional Portfolio**. The applicati
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Credits](#credits)
 
 ## Features
 
