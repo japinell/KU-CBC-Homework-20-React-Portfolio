@@ -90,14 +90,18 @@ function Projects({ projects, handlePageChange }) {
                     </a>
                   </span>
                   <span className="read-more">
-                    <a
-                      className="text-uppercase read-more-1"
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Application
-                    </a>
+                    {project.liveUrl ? (
+                      <a
+                        className="text-uppercase read-more-1"
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live Application
+                      </a>
+                    ) : (
+                      <span className="text-uppercase">(See GitHub Repo)</span>
+                    )}
                   </span>
                 </div>
               </div>

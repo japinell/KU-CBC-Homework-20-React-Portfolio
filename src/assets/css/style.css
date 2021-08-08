@@ -313,7 +313,7 @@ nav.sticky {
   width: 100%;
 }
 
-.contact form {
+.contact-form {
   /* background-color: #f0f0f0; */
   background-color: var(--honeydew);
   border-radius: 4px;
@@ -322,8 +322,8 @@ nav.sticky {
   padding: 1em;
 }
 
-.contact form input,
-.contact form textarea {
+.contact-form input,
+.contact-form textarea {
   border: none;
   border-radius: 4px;
   display: block;
@@ -332,16 +332,23 @@ nav.sticky {
   width: 100%;
 }
 
-.contact form textarea {
+.contact-form textarea {
   height: 6em;
 }
 
-.contact form input[type="submit"] {
+.contact-form input[type="submit"] {
   background-color: #e74c3c;
   border-radius: 0;
   color: #fff;
   padding: 1em;
   text-transform: uppercase;
+}
+
+.contact-form .error-message {
+  color: red;
+  padding: 1em;
+  text-align: center;
+  /* text-transform: uppercase; */
 }
 
 /* ========================
@@ -464,26 +471,26 @@ Media Queries
     margin-right: 0;
   }
 
-  .contact form {
+  .contact-form {
     padding: 3em 2em 2em;
   }
 
-  .contact form input[type="submit"] {
+  .contact-form input[type="submit"] {
     padding: 1em 3em;
     width: auto;
   }
 
-  .contact form input.full-half {
+  .contact-form input.full-half {
     float: left;
     margin-right: 2.5%;
     width: 48.75%;
   }
 
-  .contact form input.full-half:nth-of-type(2n) {
+  .contact-form input.full-half:nth-of-type(2n) {
     margin-right: 0;
   }
 
-  .contact form textarea {
+  .contact-form textarea {
     height: 12em;
   }
 }
