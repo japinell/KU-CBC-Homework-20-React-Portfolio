@@ -53,6 +53,10 @@ npm start
 
 The application has been coded with a _mobile first_ approach in mind. It allows users to navigate a sample of my professional portfolio.
 
+## Credits
+
+I would like to recognize the work of other developers and designers at [Codepen.io](https://codepen.io/), whose webpage templates inspired me in building the layout for my application. The Codepen website has a host of amazing work from smart developers and designers. I intend to _root for_ those guys, and more importantly, share my work as I progress in my journey of consolidating myself as **Full Stack Web and Mobile Developer**. I recommend you visiting the website for inspiring work and for finding the human resources you need for your projects.
+
 ## License
 
 This project is licensed under The MIT License. Refer to https://opensource.org/licenses/MIT for more information of what you can and cannot do with this project. See contact information below if you have questions, comments, or suggestions for the project.
