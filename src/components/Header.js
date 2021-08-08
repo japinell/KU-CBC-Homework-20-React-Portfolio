@@ -13,7 +13,7 @@ const styles = {
 };
 //
 function Header({ handlePageChange }) {
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState(false);
 
   const handleToggle = () => {
     setCollapsed(!collapsed);
@@ -28,22 +28,34 @@ function Header({ handlePageChange }) {
           <i className="fa fa-bars nav-toggle" onClick={handleToggle}></i>
           <ul style={collapsed ? styles.show : styles.hide}>
             <li>
-              <a href="/" onClick={() => handlePageChange("Home")}>
+              <a
+                href="/"
+                onClick={() => handlePageChange("Home") & handleToggle()}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" onClick={() => handlePageChange("About")}>
+              <a
+                href="#about"
+                onClick={() => handlePageChange("About") & handleToggle()}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" onClick={() => handlePageChange("Projects")}>
+              <a
+                href="#projects"
+                onClick={() => handlePageChange("Projects") & handleToggle()}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={() => handlePageChange("Contact")}>
+              <a
+                href="#contact"
+                onClick={() => handlePageChange("Contact") & handleToggle()}
+              >
                 Contact
               </a>
             </li>
