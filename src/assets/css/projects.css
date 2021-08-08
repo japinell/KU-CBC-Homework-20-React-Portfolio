@@ -122,14 +122,6 @@
   text-align: center;
 }
 
-.focus-section .card .social-hover .fa-share-alt {
-  color: var(--tx-focus-hover);
-}
-
-.focus-section .card .social-hover .fa-share-alt:hover {
-  color: var(--tx-color-1);
-}
-
 .focus-section .card .hover-text {
   position: relative;
   text-align: center;
@@ -271,4 +263,18 @@
 .focus-section .card .read-more-3:hover {
   color: var(--tx-focus-footer);
   text-decoration: underline;
+}
+
+.fab,
+.far {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.fab:hover,
+.far:hover {
+  top: -5px;
 }

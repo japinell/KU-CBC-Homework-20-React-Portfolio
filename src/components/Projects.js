@@ -42,10 +42,21 @@ function Projects({ projects, handlePageChange }) {
                       ></i>
                     </a>
                     <a
+                      href="https://twitter.com/japinell"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="social-icon"
+                    >
+                      <i
+                        className="fab fa-twitter-square"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a
                       href="#contact"
                       onClick={() => handlePageChange("Contact")}
                     >
-                      <i className="far fa-paper-plane"></i>
+                      <i className="far fa-envelope"></i>
                     </a>
                   </div>
                 </div>
