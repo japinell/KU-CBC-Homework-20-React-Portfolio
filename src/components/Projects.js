@@ -2,7 +2,7 @@
 import React from "react";
 import "../assets/css/projects.css";
 //
-// Render the projects in a carousel
+// Render the projects by loading them from an array
 //
 function Projects({ projects, handlePageChange }) {
   return (

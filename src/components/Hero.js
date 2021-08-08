@@ -1,5 +1,8 @@
+//
 import React from "react";
-
+//
+//  Render the hero component
+//
 function Hero() {
   return (
     <div className="container-fluid hero" id="splash">

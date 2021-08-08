@@ -9,7 +9,7 @@ import Resume from "./Resume";
 import projectData from "./ProjectData";
 import Footer from "./Footer";
 //
-// Main page
+// Main program
 //
 function Portfolio() {
   //  Track changes to the selection of current page
