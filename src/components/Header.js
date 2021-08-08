@@ -13,10 +13,10 @@ const styles = {
 };
 //
 function Header({ handlePageChange }) {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   const handleToggle = () => {
-    setNavbarOpen(!navbarOpen);
+    setCollapsed(!collapsed);
   };
   return (
     <div>
@@ -26,7 +26,7 @@ function Header({ handlePageChange }) {
             <a href="#splash">Chocoyo Portfolio</a>
           </div>
           <i className="fa fa-bars nav-toggle" onClick={handleToggle}></i>
-          <ul style={navbarOpen ? styles.show : styles.hide}>
+          <ul style={collapsed ? styles.show : styles.hide}>
             <li>
               <a href="/" onClick={() => handlePageChange("Home")}>
                 Home

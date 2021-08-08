@@ -1,7 +1,7 @@
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
 // import $ from "jquery";
-import "./assets/js/utils.js";
+// import "./assets/js/utils.js";
 //import "./assets/js/script.js";
 
 //import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic";
@@ -10,6 +10,7 @@ import "./assets/js/utils.js";
 import Portfolio from "./components/Portfolio";
 //import Projects from "./components/main/projects/Projects";
 // import Navbar from "./components/Navbar";
+import ProjectCarousel from "./components/ProjectCarousel";
 
 function App() {
   return <Portfolio />;

@@ -6,7 +6,7 @@ function Hero() {
       <div className="container">
         <img
           src="./assets/images/family.jpg"
-          alt="Portrait of Mr. Roboto"
+          alt="Portrait of Rigo A. Pinell"
           className="profile-image"
         />
         <h1>Chocoyo Portfolio</h1>

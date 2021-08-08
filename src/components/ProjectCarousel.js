@@ -4,59 +4,29 @@ import "../assets/css/projects.css";
 //
 // Render the projects in a carousel
 //
-function Projects({ projects, handlePageChange }) {
+function ProjectCarousel({ projects }) {
   return (
     <section id="focus" className="focus-section">
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {projects.map((project) => (
           <div className="col" key={project.id}>
             <div className="card shadow-sm h-100">
-              <div className="text-img-over">
+              <div className="card-image">
                 <img
                   src={project.image}
                   className="card-img-top"
                   alt={project.shortTitle}
                 />
-                <div className="overlay">
-                  <div className="social-hover">
-                    <a
-                      href="https://www.linkedin.com/in/japinell/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="social-icon"
-                    >
-                      <i
-                        className="fab fa-linkedin-square"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                    <a
-                      href="https://github.com/japinell"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="social-icon"
-                    >
-                      <i
-                        className="fab fa-github-square"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                    <a
-                      href="#contact"
-                      onClick={() => handlePageChange("Contact")}
-                    >
-                      <i className="far fa-paper-plane"></i>
-                    </a>
-                  </div>
-                </div>
+                <div className="image-overlay"></div>
               </div>
+
               <div className="card-body">
                 <h3 className="card-title">{project.longTitle}</h3>
                 <div className="text-left my-2">
                   <div className="sub-cat text-truncate">
                     {project.technologies.map((technology) => (
                       <span
-                        className="badge rounded-pill bg-category"
+                        className="badge rounded-pill bg-category text-uppercase"
                         key={technology}
                       >
                         {technology}
@@ -118,4 +88,4 @@ function Projects({ projects, handlePageChange }) {
   );
 }
 
-export default Projects;
+export default ProjectCarousel;
