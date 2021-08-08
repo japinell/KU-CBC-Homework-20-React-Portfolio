@@ -11,7 +11,7 @@ function Hero() {
         />
         <h1>Chocoyo Portfolio</h1>
         <span className="lead">Rigo A. Pinell</span>
-        <span className="continue">
+        <span className="arrow">
           <a href="#about">
             <i className="fa fa-angle-down"></i>
           </a>

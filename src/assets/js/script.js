@@ -1,4 +1,8 @@
 //
+import $ from "jquery";
+//
+//  Functions to handle user interaction
+//
 $("#aboutMe").collapse({ show: true });
 $("#aboutChocoyos").collapse({ show: true });
 $("#myProjects").collapse({ show: true });

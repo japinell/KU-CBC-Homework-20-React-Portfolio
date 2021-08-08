@@ -1,18 +1,32 @@
 //
-import React from "react";
+import React, { useState } from "react";
 //
 // Render the navigation bar
 //
+const styles = {
+  show: {
+    display: "block",
+  },
+  hide: {
+    display: "none",
+  },
+};
+//
 function Header({ handlePageChange }) {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
   return (
-    <header>
+    <div>
       <nav className="container-fluid nav">
         <div className="container custom-container-fluid">
           <div className="brand">
             <a href="#splash">Chocoyo Portfolio</a>
           </div>
-          <i className="fa fa-bars nav-toggle"></i>
-          <ul>
+          <i className="fa fa-bars nav-toggle" onClick={handleToggle}></i>
+          <ul style={navbarOpen ? styles.show : styles.hide}>
             <li>
               <a href="/" onClick={() => handlePageChange("Home")}>
                 Home
@@ -39,7 +53,7 @@ function Header({ handlePageChange }) {
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
 
