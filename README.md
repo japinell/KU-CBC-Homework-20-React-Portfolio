@@ -13,7 +13,7 @@ This is a **React** application for my **Professional Portfolio**. The applicati
 
 The application features the use of **Components** to enable reusing and plugging in logic as needed, **Props** to pass data between components, and **Hooks** to control the application state and flow (for instance, **useState** is used to conditionally render components based on the application state, and to style the application conditionally). The application has been optimized for mobile devices using **Boostrap** library and **Custom CSS**.
 
-![The application visual aspect.](./images/visual-aspect1.png)
+![The application visual aspect.](./public/assets/images/visual-aspect1.png)
 
 ## Installation
 
