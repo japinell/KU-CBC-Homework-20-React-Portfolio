@@ -1,6 +1,6 @@
 # Unit 20 React: React Portfolio
 
-This is a **React** application for my **Professional Portfolio**. The application uses **components** to render all the sections (_Header_, _Navigation_, _About_, _Projects_, _Contact_, and _Resume_) in a single page, and **Hooks**, like **useState**, to control the application flow.
+This is a **React** application for my **Professional Portfolio**. The application uses **components** to render all the sections (_Header_, _Navigation_, _About_, _Projects_, _Contact_, and _Resume_) in a single page, and **Hooks**, like **useState**, to control the application state and flow.
 
 ## Implementation
 
@@ -11,7 +11,7 @@ This is a **React** application for my **Professional Portfolio**. The applicati
 
 ## Features
 
-The application is composed of components to enable reusing and plugging blocks as needed. **Props** are used to pass data between components, and **Hooks** to control the application flow (for instance, **useState** is used to conditionally render components based on the application state). The application has been optimized for mobile devices using **Boostrap** library and **Custom CSS**.
+The application features the use of **Components** to enable reusing and plugging in logic as needed, **Props** to pass data between components, and **Hooks** to control the application state and flow (for instance, **useState** is used to conditionally render components based on the application state, and to style the application conditionally). The application has been optimized for mobile devices using **Boostrap** library and **Custom CSS**.
 
 ![The application visual aspect.](./images/visual-aspect1.png)
 
