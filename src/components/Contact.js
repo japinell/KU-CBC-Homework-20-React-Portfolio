@@ -35,13 +35,13 @@ function Contact() {
           <div className="form-group">
             <button
               type="submit"
-              className="btn btn-outline-primary btn-sm post-form-submit my-2 my-sm-0"
+              className="btn btn-outline-primary btn-sm post-form-submit m-5"
             >
               Send
             </button>
             <button
               type="submit"
-              className="btn btn-outline-primary btn-sm post-form-cancel my-2 my-sm-0"
+              className="btn btn-outline-primary btn-sm post-form-cancel my-5"
             >
               Cancel
             </button>

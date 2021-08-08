@@ -36,6 +36,19 @@
   --tx-focus-card: #000;
   --tx-button: #fff;
   --bg-button: #0059b3;
+
+  /* --working-area: 100%;
+  --charcoal: hsla(197, 37%, 24%, 1);
+  --persian-green: hsla(173, 52%, 34%, 1);
+  --orange-yellow-crayola: hsla(43, 74%, 66%, 0.1);
+  --sandy-brown: hsla(27, 87%, 67%, 1);
+  --burnt-sienna: hsla(12, 76%, 61%, 1);
+
+  --imperial-red: rgba(230, 57, 70, 1);
+  --honeydew: rgba(241, 250, 238, 1);
+  --powder-blue: rgba(168, 218, 220, 1);
+  --celadon-blue: rgba(69, 123, 157, 1);
+  --prussian-blue: rgba(29, 53, 87, 1); */
 }
 
 /* .focus-section {
@@ -154,6 +167,7 @@
 .focus-section .card .sub-cat {
   font-weight: 600;
   font-size: 1rem;
+  text-align: center;
 }
 
 .focus-section .card .sub-cat .bg-category {
@@ -181,9 +195,15 @@
 }
 
 .focus-section .card .card-footer {
-  background: var(--bg-focus-footer);
+  background: var(--bg-focus-cat);
   color: var(--tx-focus-footer);
 }
+
+/* --charcoal: hsla(197, 37%, 24%, 1);
+--persian-green: hsla(173, 52%, 34%, 1);
+--orange-yellow-crayola: hsla(43, 74%, 66%, 0.1);
+--sandy-brown: hsla(27, 87%, 67%, 1);
+--burnt-sienna: hsla(12, 76%, 61%, 1); */
 
 .focus-section .card .card-footer .card-footer__info {
   font-size: 1rem;
