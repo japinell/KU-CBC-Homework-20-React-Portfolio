@@ -2,11 +2,10 @@
 import React, { useState } from "react";
 import Home from "./Home";
 import Header from "./Header";
-// import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
-import ProjectCarousel from "./ProjectCarousel";
 import Contact from "./Contact";
+import Resume from "./Resume";
 import projectData from "./ProjectData";
 import Footer from "./Footer";
 //
@@ -58,9 +57,6 @@ function Portfolio() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* <Hero /> */}
-      {/* <Main /> */}
-      {/* <Footer /> */}
     </div>
   );
 }
