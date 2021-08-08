@@ -29,7 +29,7 @@ function Header({ handlePageChange }) {
           <ul style={collapsed ? styles.show : styles.hide}>
             <li>
               <a
-                href="/"
+                href="#home"
                 onClick={() => handlePageChange("Home") & handleToggle()}
               >
                 Home
