@@ -10,6 +10,12 @@
   --sandy-brown: hsla(27, 87%, 67%, 1);
   --burnt-sienna: hsla(12, 76%, 61%, 1);
 
+  --imperial-red: rgba(230, 57, 70, 1);
+  --honeydew: rgba(241, 250, 238, 1);
+  --powder-blue: rgba(168, 218, 220, 1);
+  --celadon-blue: rgba(69, 123, 157, 1);
+  --prussian-blue: rgba(29, 53, 87, 1);
+
   --background-navbar: #2a9d8f;
   --background-about: #2a9d8f; /* #e74c3c; */
   --background-projects: #e76f51;
@@ -308,9 +314,10 @@ nav.sticky {
 }
 
 .contact form {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: var(--honeydew);
   border-radius: 4px;
-  border-top: 8px solid #e74c3c;
+  /* border-top: 8px solid #e74c3c; */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   padding: 1em;
 }
