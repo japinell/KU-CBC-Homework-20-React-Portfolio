@@ -52,7 +52,7 @@ npm start
 
 ## Usage
 
-The application has been coded with a _mobile first_ approach in mind. It allows users to navigate a sample of my professional portfolio and check out the **Live** application and the application **repository** in **GitHub**, while providing links to my **LinkedIn**, **GitHub**, and **Twitter** Profiles, were users can check further projects that I am working on. IT also provides my updated **Resume** and will soon host a fully functional **Contact** form for users to contact me directly from the website. (_Note_: the Contact form feature is still not functional as it is currently under development.)
+The application has been coded with a _mobile first_ approach in mind. It allows users to navigate a sample of my professional portfolio and check out the **Live** application and the application **repository** in **GitHub**, while providing links to my **LinkedIn**, **GitHub**, and **Twitter** Profiles, were users can check further projects that I am working on. It also provides my updated **Resume** and will soon host a fully functional **Contact** form for users to contact me directly from the website. (_Note_: the Contact form feature is still not functional as it is currently under development.)
 
 Check out the live application in [GitHub Pages](https://japinell.github.io/ku-cbc-homework-20-react-portfolio/).
 
