@@ -5,9 +5,8 @@ import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Resume from "./Resume";
-import projectData from "./ProjectData";
 import Footer from "./Footer";
+import projectData from "./ProjectData";
 //
 // Main program
 //

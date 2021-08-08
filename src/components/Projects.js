@@ -111,25 +111,6 @@ function Projects({ projects, handlePageChange }) {
         ;
       </div>
     </section>
-    // <div className="container-fluid portfolio" id="portfolio">
-    //   <div className="container cf">
-    //     <h2>Projects</h2>
-    //     <div className="gallery">
-    //       {projects.map((project) => (
-    //         <div className="gallery-image">
-    //           <a href={project.liveUrl} target="_blank" rel="noreferrer">
-    //             <img
-    //               className="card-img"
-    //               src={project.image}
-    //               alt={project.shortTitle}
-    //               width="50%"
-    //             />
-    //           </a>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 

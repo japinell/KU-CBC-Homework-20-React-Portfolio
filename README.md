@@ -15,6 +15,16 @@ The application features the use of **Components** to enable reusing and pluggin
 
 ![The application visual aspect.](./public/assets/images/visual-aspect1.png)
 
+![The application visual aspect.](./public/assets/images/visual-aspect2.png)
+
+![The portfolio component.](./public/assets/images/portfolio-component.png)
+
+![The header component.](./public/assets/images/header-component.png)
+
+![The projects component.](./public/assets/images/projects-component.png)
+
+![The contact component.](./public/assets/images/contact-component.png)
+
 ## Installation
 
 The application requires [Node.Js](https://nodejs.org/en/) Runtime Library and [React](https://reactjs.org/) library. It also requires installing **Boostrap** and importing **Font Awesome** for styling.

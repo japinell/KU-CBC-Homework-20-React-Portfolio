@@ -1,5 +1,8 @@
+//
 import React from "react";
-
+//
+//  Render the footer component
+//
 function Footer({ handlePageChange }) {
   return (
     <footer className="container-fluid footer">
