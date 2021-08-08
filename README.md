@@ -56,7 +56,7 @@ The application has been coded with a _mobile first_ approach in mind. It allows
 
 ## Credits
 
-I would like to recognize the work of other developers and designers at [Codepen.io](https://codepen.io/), whose webpage templates inspired me in building the layout for my application. The Codepen website has a host of amazing work from smart developers and designers. I intend to _root for_ those guys and girls, and more importantly, share my work as I progress in my journey of consolidating myself as **Full Stack Web and Mobile Developer**. I recommend you visiting the website for inspiring work and for finding the human resources you need for your projects.
+I would like to recognize the work of other developers and designers at [Codepen.io](https://codepen.io/), whose webpage templates inspired me in building the layout for my application. The Codepen website has a host of amazing work from smart developers and designers. I intend to _root for_ those guys and girls, and more importantly, share my work as I progress in my journey of establishing myself as a **Full Stack Web and Mobile Developer**. I recommend you visiting the website for inspiring work and for finding the human resources you need for your projects.
 
 ## License
 
