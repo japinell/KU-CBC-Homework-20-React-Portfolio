@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ku-cbc-homework-20-react-portfolio/static/css/main.af6bca6d.chunk.css",
-    "main.js": "/ku-cbc-homework-20-react-portfolio/static/js/main.b3bf93ca.chunk.js",
-    "main.js.map": "/ku-cbc-homework-20-react-portfolio/static/js/main.b3bf93ca.chunk.js.map",
-    "runtime-main.js": "/ku-cbc-homework-20-react-portfolio/static/js/runtime-main.cb13d4f7.js",
-    "runtime-main.js.map": "/ku-cbc-homework-20-react-portfolio/static/js/runtime-main.cb13d4f7.js.map",
-    "static/css/2.5ba044a3.chunk.css": "/ku-cbc-homework-20-react-portfolio/static/css/2.5ba044a3.chunk.css",
-    "static/js/2.85afcc74.chunk.js": "/ku-cbc-homework-20-react-portfolio/static/js/2.85afcc74.chunk.js",
-    "static/js/2.85afcc74.chunk.js.map": "/ku-cbc-homework-20-react-portfolio/static/js/2.85afcc74.chunk.js.map",
-    "index.html": "/ku-cbc-homework-20-react-portfolio/index.html",
-    "static/css/2.5ba044a3.chunk.css.map": "/ku-cbc-homework-20-react-portfolio/static/css/2.5ba044a3.chunk.css.map",
-    "static/css/main.af6bca6d.chunk.css.map": "/ku-cbc-homework-20-react-portfolio/static/css/main.af6bca6d.chunk.css.map",
-    "static/js/2.85afcc74.chunk.js.LICENSE.txt": "/ku-cbc-homework-20-react-portfolio/static/js/2.85afcc74.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/ku-cbc-homework-20-react-portfolio/static/media/chocoyos.e3a5092c.jpg",
-    "static/media/font-awesome.min.css": "/ku-cbc-homework-20-react-portfolio/static/media/fontawesome-webfont.f691f37e.woff"
+    "main.css": "/static/css/main.cae01a75.chunk.css",
+    "main.js": "/static/js/main.b3bf93ca.chunk.js",
+    "main.js.map": "/static/js/main.b3bf93ca.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.824bb758.js",
+    "runtime-main.js.map": "/static/js/runtime-main.824bb758.js.map",
+    "static/css/2.f9e9503e.chunk.css": "/static/css/2.f9e9503e.chunk.css",
+    "static/js/2.85afcc74.chunk.js": "/static/js/2.85afcc74.chunk.js",
+    "static/js/2.85afcc74.chunk.js.map": "/static/js/2.85afcc74.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f9e9503e.chunk.css.map": "/static/css/2.f9e9503e.chunk.css.map",
+    "static/css/main.cae01a75.chunk.css.map": "/static/css/main.cae01a75.chunk.css.map",
+    "static/js/2.85afcc74.chunk.js.LICENSE.txt": "/static/js/2.85afcc74.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/chocoyos.e3a5092c.jpg",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb13d4f7.js",
-    "static/css/2.5ba044a3.chunk.css",
+    "static/js/runtime-main.824bb758.js",
+    "static/css/2.f9e9503e.chunk.css",
     "static/js/2.85afcc74.chunk.js",
-    "static/css/main.af6bca6d.chunk.css",
+    "static/css/main.cae01a75.chunk.css",
     "static/js/main.b3bf93ca.chunk.js"
   ]
 }
