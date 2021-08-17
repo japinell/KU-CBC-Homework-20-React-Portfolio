@@ -21,11 +21,11 @@ function About({ handlePageChange }) {
             <strong> Flex Stack Coding Boot Camp </strong> at
             <strong> Kansas University</strong> where I am learning to develop,
             test, and deploy web and mobile applications using HTML, CSS,
-            JavaScript, Bootstrap, Tailwind CSS, JQuery, Node.JS, Express.JS,
-            Sequelize, MySQL, JawsDB, Express Handlebars, and other frameworks
-            and libraries including Inquirer, Jest, Dotenv, Express Session,
-            Connect Session Sequelize, Bcrypt, DayJS, Google Fonts, and Font
-            Awesome.
+            JavaScript, Bootstrap, Tailwind, Material UI, JQuery, Node.JS,
+            Express.JS, Sequelize, MySQL, JawsDB, Express Handlebars, MongoDb,
+            MERN, GraphQL, React, Redux, PWA, and many other frameworks and
+            libraries including Inquirer, Jest, Dotenv, Express Session, Connect
+            Session Sequelize, Bcrypt, DayJS, Google Fonts, and Font Awesome.
           </p>
           <p className="card-text">
             On my spare time, I enjoy reading business, science, and technology
