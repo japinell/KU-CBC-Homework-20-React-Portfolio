@@ -16,10 +16,9 @@ function About({ handlePageChange }) {
         <div className="card-body text-justify">
           <p className="card-text">
             My name is <strong>Jose A Pinell</strong>. I specialize in building
-            applications for desktop, web, and mobile devices. I am currently
-            enrolled in the
+            applications for desktop, web, and mobile devices. I completed the
             <strong> Flex Stack Coding Boot Camp </strong> at
-            <strong> Kansas University</strong> where I am learning to develop,
+            <strong> Kansas University</strong> where I learned to develop,
             test, and deploy web and mobile applications using HTML, CSS,
             JavaScript, Bootstrap, Tailwind, Material UI, JQuery, Node.JS,
             Express.JS, Sequelize, MySQL, JawsDB, Express Handlebars, MongoDb,
