@@ -9,13 +9,13 @@ function About({ handlePageChange }) {
       <div className="container">
         <img
           src="./assets/images/picture.jpg"
-          alt="Portrait of Rigo A. Pinell"
+          alt="Portrait of Jose A. Pinell"
           className="profile-image"
         />
         <h2>About Me</h2>
         <div className="card-body text-justify">
           <p className="card-text">
-            My name is <strong>Rigo A Pinell</strong>. I specialize in building
+            My name is <strong>Jose A Pinell</strong>. I specialize in building
             applications for desktop, web, and mobile devices. I am currently
             enrolled in the
             <strong> Flex Stack Coding Boot Camp </strong> at
